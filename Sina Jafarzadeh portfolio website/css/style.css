@@ -21,7 +21,7 @@ justify-content: space-between;
 
 }
 body{
-  background-color: #252627;
+  background-color: #010c21;
 }
 header {
   display: flex;
@@ -30,18 +30,18 @@ header {
   padding: 20px 0;
 }
 .navbar {
-  background-color: #181818;
+  background-color: #040015;
   
 }
 .titleElements {
   font-size: 15px;
   padding-top: 15px;
   display: inline-block; 
-  color: #fffff; 
+  color: #ffffff; 
 }
 .titleElements:hover {
- color: #48cfad;  
-        
+ color: #0066ff;  
+ text-shadow: 0 0 1.2rem #0066ff;       
 }
 header h1,
 header a,
@@ -88,11 +88,11 @@ margin-top: 120px;
   display: inline-block;
 }
 span:hover {
-  color: #48cfad;
+  color: #aba1ff;
   transition: all 0.5s;
 }
 span.name {
-  color: #ed5565;
+  color: #0066ff;
 }
 span.m-left {
   margin-left: -10px;
@@ -105,8 +105,8 @@ span.m-left {
 .text a{
   padding: 12px 25px;
   background-color: none;
-  border: 3px solid #ed5565;
-  color: #ed5565;
+  border: 3px solid#0066ff;
+  color:#0066ff;
   font-size: 0.8rem;
   letter-spacing: 2px;
   position: relative;
@@ -120,7 +120,7 @@ span.m-left {
 }
 .text a::before {
   content: '';
-  background-color: #ed5565;
+  background-color:#0066ff;
   position: absolute;
   left: 0;
   top: 0;
@@ -136,21 +136,27 @@ span.m-left {
 .profile-image img{
   width: 450px;
   margin-top: 50px;
+  box-shadow: 0 0 0.5rem #0066ff;
 }
 .about {
   height: 100vh;
   margin-top: 100px;
 }
-.about h1,
+.about h1{
+  color: #041e4dd2;
+  font-size: 150px;
+  top: 30px;
+}
 .work h1 {
+  color: #041e4dd2;
   font-size: 10rem;
   z-index: 0;
-  opacity: 0.1;
+  
 }
 .about-me-info {
-  max-width: 900px;
-  background-color: #252627;
-  box-shadow: 0 0 1.2rem rgb(0,0,0,0.25);
+  max-width: 950px;
+  background-color: #05203c;
+  box-shadow: 0 0 1.2rem rgba(18, 0, 136, 0.487);
   padding: 50px;
   position: relative;
   top: -70px;
@@ -161,14 +167,15 @@ span.m-left {
 }
 .about-me-info p {
    font-size: 1.3rem;
-   color: #DA9B9B;
+   color: #ffffff;
 }
 .about-me-info p:nth-child(2),
 .about-me-info p:last-child {
     margin-top: 30px;
 }
 .about img {
-  width: 300px;
+  width: 600px;
+  height: 550px;
   position: relative;
   top: -300px;
   left: calc(100% - 100px);
@@ -177,18 +184,22 @@ span.m-left {
 }
 .skills {
 height: 115vh;
+margin-top: 100px;
 }
 
-.skills h1,
+.skills h1{
+  color: #041e4dd2;
+  font-size: 150px;
+}
 .contact h1 {
-  text-align: right;
-  font-size: 10rem;
-  opacity: 0.1;
+  text-align: left;
+  color: #041e4dd2;
+  font-size: 140px;
 }
 
 .skills-info {
   font-size: 1.4rem;
-  color: #bebebe;
+  color: #ffffff;
   max-height: 800px;
   position: relative;
   left: 50%;
@@ -209,11 +220,11 @@ div[class^='tag-'] {
   clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 0% 50%, 0% 0%);
   width: 120px;
   height: 30px;
-  background-color: #1785a7;
+  background-color: #0066ff;
   margin-right: 30px;
 }
 div[class^='tag-'] p {
-  color: #fff;
+  color: #ffffff;
   text-align: left;
   padding-left: 10px;
   font-size: 1.1rem;
@@ -224,14 +235,15 @@ div[class^='tag-'] p {
   position: relative;
   width: 600px;
   height: 20px;
-  border: 2px solid #48cfad;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0.25rem #fff;
   border-radius: 20px;
   margin-top: 7px;
 }
 
 div[class^='bar-'] {
   position: absolute;
-  background-color: #48cfad;
+  background-color: #0066ff;
   height: 10px;
   border-radius: 20px;
   margin: 2.7px;
@@ -246,13 +258,13 @@ div[class^='bar-'] {
 
 .work-category button {
   text-transform: capitalize;
-  border: 3px solid #ed5565;
+  border: 3px solid #0066ff;
   padding: 15px 30px;
   border-radius: 50px;
-  color: #ed5565;
+  color:#0066ff;
   font-size: 1.1rem;
   letter-spacing: 1px;
-  background-color: #252627;
+  background-color:#040015;
   outline: none;
   cursor: pointer;
 }
@@ -263,22 +275,24 @@ div[class^='category-'] {
 }
 
 .work a {
+  color: #fff;
   justify-self: center;
   position: relative;
   display: inline-block;
 }
 
 .work-category .active {
-  background-color: #ed5565;
+  background-color: #000000;
 }
 
 button.active {
-  color: #fff;
+  color: #040015;
 }
 
 .work a img {
   width: 350px;
   height: 200px;
+  box-shadow: 0 0 0.5rem #0066ff;
   justify-self: center;
 }
 
@@ -289,7 +303,6 @@ div.hideCategory {
 .contact {
   margin-top: 120px;
 }
-
 form input,
 
 
@@ -297,12 +310,13 @@ form textarea {
   display: block;
   width: 500px;
   padding: 20px;
-  background-color: #252627;
-  border: 3px solid #707070;
+  background-color:#040015;
+  border: 3px solid #0066ff;
+  box-shadow: 0 0 0.5rem #0066ff;
   margin: 20px 0;
   outline: none;
   font-size: 1.2rem;
-  color: #fff;
+  color: rgb(255, 255, 255);
   position: relative;
   left: 50%;
   right: 50%;
@@ -312,21 +326,21 @@ form textarea {
 
 form input:last-child {
   width: 150px;
-  background-color: #ed5565;
-  border: none;
+  background-color: #040015;
+  border-color: #0066ff;
   cursor: pointer;
 }
 footer hr {
-  border: 2px solid #707070;
+  border: 2px solid #ffffff;
   margin-top: 80px;
 }
 footer p {
   text-align: center;
-  color: #707070;
+  color: #ffffff;
   font-size: 1.2rem;
   padding: 30px 0;
 }
 .Email-description {
   text-align: center;
-  color: #707070;
+  color: #0066ff;
 }
